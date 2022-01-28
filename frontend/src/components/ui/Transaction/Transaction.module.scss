@@ -1,0 +1,64 @@
+.icon {
+  margin-right: 8px;
+}
+
+.text {
+
+}
+
+.label {
+  margin-right: 11px;
+}
+
+.box {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 10px;
+
+  font-size: 14px;
+  line-height: 18px;
+
+  border-radius: 6px;
+
+  transition: all .1s ease;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &:active {
+    opacity: .5;
+  }
+
+  &.withdrawal {
+    color: #FF624D;
+    background: #4A2520;
+
+    .icon {
+      stroke: #FF624D;
+    }
+  }
+
+  &.adding {
+    background: #2F3F2D;
+    color: #00EA60;
+
+    .icon {
+      stroke: #00EA60;
+    }
+  }
+}
+
+.link {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 100%;
+}

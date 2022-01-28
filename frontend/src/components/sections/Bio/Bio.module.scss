@@ -1,0 +1,188 @@
+.section {
+  width: 100%;
+  margin-bottom: 21px;
+}
+
+.coverContainer {
+  height: 224px;
+  width: 100%;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.info {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.topRow {
+  display: flex;
+  align-items: flex-end;
+  margin-top: -107px;
+  justify-content: space-between;
+  margin-bottom: 13px;
+}
+
+.avatarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 168px;
+  padding: 4px;
+  margin-left: -4px;
+
+  background-color: #1F1F1F;
+  border-radius: 12px;
+}
+
+.avatar {
+  width: 100%;
+  height: 100%;
+
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.controlList {
+  display: flex;
+  padding-bottom: 4px;
+}
+
+.control {
+  margin-right: 10px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.name {
+  margin: 0;
+  margin-bottom: 16px;
+
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 133%;
+  color: #FFFFFF;
+}
+
+.desc {
+  margin: 0;
+  margin-bottom: 16px;
+  max-width: 700px;
+
+  font-size: 14px;
+  line-height: 143%;
+  color: #FFFFFF;
+}
+
+.linkList {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.linkItem {
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.follow {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .section {
+    margin-bottom: 16px;
+  }
+
+  .coverContainer {
+    height: 112px;
+  }
+
+  .info {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .avatarContainer {
+    width: 88px;
+    height: 88px;
+  }
+
+  .name {
+    margin-bottom: 12px;
+    font-size: 20px;
+  }
+
+  .desc {
+    margin-bottom: 12px;
+    font-size: 14px;
+  }
+
+  .mobNone {
+    display: none;
+  }
+
+  .topRow {
+    margin-top: -68px;
+    margin-bottom: 10px;
+
+    .share {
+      position: relative;
+      top: 40px;
+
+      width: 40px;
+      height: 40px;
+      padding: 0;
+
+      background: #333333;
+
+      span {
+        display: none;
+      }
+
+      svg {
+        margin-right: 0 !important;
+        stroke: #0075FF;
+      }
+    }
+  }
+
+  .linkList {
+    margin-bottom: 16px;
+  }
+
+  .avatar,
+  .avatarContainer {
+    border-radius: 6px;
+  }
+
+  .follow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #0075FF;
+
+    border: none;
+    background: rgba(41, 126, 225, 0.25);
+    border-radius: 8px;
+  }
+}

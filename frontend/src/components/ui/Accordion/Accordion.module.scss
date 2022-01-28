@@ -1,0 +1,110 @@
+.head {
+  position: relative;
+
+  padding: 22px 0;
+
+  cursor: pointer;
+}
+
+.icon {
+  position: absolute;
+  left: -41px;
+  top: 19px;
+
+  stroke: #666666;
+  transition: all .1s ease;
+}
+
+.title {
+  margin: 0;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  color: #FFFFFF;
+
+  transition: all .1s ease;
+}
+
+.body {
+  overflow: hidden;
+
+  height: 0;
+}
+
+.bodyInner {
+  padding-bottom: 32px;
+}
+
+.text {
+  max-width: 600px;
+
+  font-size: 14px;
+  line-height: 143%;
+  color: #FFFFFF;
+
+  p {
+    margin: 0;
+    margin-bottom: 14px;
+  }
+}
+
+.note {
+  font-size: 12px;
+  line-height: 133%;
+  color: #999999;
+}
+
+.box {
+  padding: 0 56px;
+
+  width: 100%;
+  border: 1px solid #333333;
+  border-radius: 6px;
+
+  transition: all .1s ease;
+
+  &.open {
+    background: #333333;
+
+    .icon {
+      stroke: #0075FF;
+      transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+
+    .title {
+      color: #0075FF;
+    }
+
+    .body {
+      height: auto;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .box {
+    padding: 0 16px;
+
+    background: #151515;
+    border: none;
+
+    &.open {
+      background: #151515;
+    }
+  }
+
+  .head {
+    padding: 16px 16px 16px 0;
+  }
+
+  .icon {
+    left: unset;
+    right: -5px;
+    top: 14px;
+  }
+
+  .text {
+    color: rgba(256, 256, 256, .8);
+  }
+}

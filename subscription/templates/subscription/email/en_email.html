@@ -1,0 +1,33 @@
+<html>
+
+<body style="font-family: 'Inter', 'Arial', sans-serif; font-size: 18px; line-height: 30px; color: #F2F2F2; background: #000000;">
+
+
+<div class="container" style="padding: 0 16px 108px; margin: 0 auto; max-width: 600px;">
+    <img src="cid:email_image" style="max-width: 600px; margin-bottom: 28px;">
+    <p style="margin: 0 0 24px;color: #F2F2F2;">
+        Hey {{ subscriber.name }},
+    </p>
+    <p style="margin: 0 0 24px;color: #F2F2F2;">
+        My Name is Alex, and I am the founder of N+1. I want to say thank you for signing up for N+1. You’re now part of
+        our vision for the Banking Network of the Future. Access to N+1 is currently invite-only. Your waitlist number
+        is #<span class="blue">{{ subscriber.id|add:1000 }}</span>. Our team is working very hard to put N+1 in your
+        hands at the earliest. We’ll keep you updated about our forthcoming launch.
+    </p>
+    <p style="margin: 0 0 24px;color: #F2F2F2;">
+        Until then, If the concept reflects your own beliefs and you want to be part of this journey, help us out by
+        telling your friends about N+1.
+    </p>
+    <p style="margin: 0 0 24px;color: #F2F2F2;">
+        In the meantime, you can listen to my playlist to be on the same wavelength :)
+        <a target="_blank"
+           style="color: #0075ff;"
+           href="https://open.spotify.com/playlist/2YdD9QlUtOVMTIkCR9ZbQt?si=6pucENP0QuSV7kbMPuDFsw&utm_source=copy-link&dl_branch=1&nd=1">
+            Spotify link.
+        </a>
+    </p>
+    <p style="margin: 0 0 24px;color: #F2F2F2;">Be n+1 among us.</p>
+    <p style="margin: 0 0 24px;color: #F2F2F2;">Team N+1</p>
+</div>
+
+</body>

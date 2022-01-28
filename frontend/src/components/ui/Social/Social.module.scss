@@ -1,0 +1,59 @@
+.link {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+.icon {
+  fill: #FFFFFF;
+  transition: all .1s ease;
+}
+
+.item {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+
+  background: #0075FF;
+  border-radius: 4px;
+
+  transition: all .1s ease;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    background: #FFFFFF;
+
+    .icon {
+      fill: #0075FF;
+    }
+  }
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+
+  list-style: none;
+
+  &.small {
+    .item {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

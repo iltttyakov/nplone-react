@@ -1,0 +1,106 @@
+.section {
+  position: relative;
+  z-index: 1;
+
+  padding-top: 150px;
+  padding-bottom: 166px;
+
+  background-color: #000000;
+}
+
+.sectionBg {
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  width: 58%;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.container {
+
+}
+
+.desc {
+  margin: 0;
+  margin-bottom: 47px;
+  max-width: 777px;
+
+  font-size: 28px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 56px;
+  max-width: 618px;
+
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 120%;
+  color: #FFFFFF;
+
+  .fade {
+    text-decoration: line-through;
+
+    opacity: .5;
+  }
+}
+
+.fade {
+
+}
+
+@media (max-width: 1600px) {
+  .section::after {
+    width: 56%;
+  }
+
+  .container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media (max-width: 1064px) {
+  .section {
+    padding-top: 64px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding-bottom: 480px;
+  }
+
+  .sectionBg {
+    top: unset;
+    left: 0;
+
+    width: 100%;
+    height: 480px;
+
+    background-position: top;
+  }
+
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .title {
+    margin-bottom: 31px;
+    font-size: 32px;
+  }
+
+  .desc {
+    margin-bottom: 25px;
+    font-size: 16px;
+  }
+}

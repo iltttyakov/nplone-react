@@ -1,0 +1,37 @@
+<html>
+
+<body style="font-family: 'Inter', 'Arial', sans-serif; font-size: 18px; line-height: 30px; color: #F2F2F2; background: #000000;">
+
+<div class="container" style="padding: 28px 16px 108px; margin: 0 auto; max-width: 600px;">
+    <img src="cid:email_image" style="max-width: 600px; margin-bottom: 28px;">
+    <p style="margin: 0 0 24px;color: #F2F2F2;">
+        Hallo {{ subscriber.name }},
+    </p>
+    <p style="margin: 0 0 24px;color: #F2F2F2;">
+        mein Name ist Alex und ich bin der Gründer von N+1. Ich möchte mich bei dir bedanken, dass du dich bei N+1
+        angemeldet hast. Du bist nun Teil unserer Zukunftsvision eines nachhaltigen Banking-Netzwerks.
+    </p>
+    <p style="margin: 0 0 24px;color: #F2F2F2;">
+        Der Zugriff auf N+1 ist derzeit nur auf Einladung möglich. Deine Wartelistennummer lautet <span
+            style="color: #0075ff;">#{{ subscriber.id|add:1000 }}</span>.
+        Unser Team arbeitet hart daran, N+1 so schnell wie möglich auch für dich zugänglich zu machen. Wir werden dich
+        über den bevorstehenden Start auf dem Laufenden halten.
+    </p>
+    <p style="margin: 0 0 24px;color: #F2F2F2;">
+        Bis dahin, wenn das N+1’s Konzept deine eigenen Überzeugungen widerspiegelt und du einen Teil dieser Reise sein
+        möchtest, kannst du uns weiterhelfen, indem du deinen Freunden von uns erzählst.
+    </p>
+    <p style="margin: 0 0 24px;color: #F2F2F2;">
+        In der Zwischenzeit kannst du dir meine Playliste anhören, um auf derselben Wellenlänge zu sein :)
+        <a target="_blank"
+           style="color: #0075ff;"
+           href="https://open.spotify.com/playlist/2YdD9QlUtOVMTIkCR9ZbQt?si=6pucENP0QuSV7kbMPuDFsw&utm_source=copy-link&dl_branch=1&nd=1"
+        >
+            Spotify link.
+        </a>
+    </p>
+    <p style="margin: 0 0 24px;color: #F2F2F2;">Be n+1 among us.</p>
+    <p style="margin: 0 0 24px;color: #F2F2F2;">Dein Team von N+1</p>
+</div>
+
+</body>

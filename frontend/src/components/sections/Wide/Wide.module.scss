@@ -1,0 +1,47 @@
+.box {
+  display: flex;
+  align-items: center;
+}
+
+.flag {
+  width: 72px;
+  height: 72px;
+  margin-right: 16px;
+}
+
+.title {
+  margin: 0;
+  margin-bottom: 12px;
+
+  font-size: 28px;
+  line-height: 100%;
+  color: #FFFFFF;
+
+  letter-spacing: -0.04em;
+}
+
+.subtitle {
+  margin: 0;
+  font-size: 20px;
+  line-height: 100%;
+  color: #FFFFFF;
+
+  letter-spacing: -0.04em;
+}
+
+@media (max-width: 1064px) {
+  .flag {
+    height: 44px;
+    width: 44px;
+    margin-right: 12px;
+  }
+
+  .title {
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+}

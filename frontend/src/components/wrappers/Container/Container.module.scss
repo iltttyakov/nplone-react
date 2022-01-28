@@ -1,0 +1,15 @@
+.box {
+  width: 100%;
+  max-width: 1698px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 64px;
+  padding-left: 64px;
+}
+
+@media (max-width: 786px) {
+  .box {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+}

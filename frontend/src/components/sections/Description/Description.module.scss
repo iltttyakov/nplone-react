@@ -1,0 +1,17 @@
+.section {
+  padding: 0 32px;
+
+  p {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 143%;
+    color: #FFFFFF;
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 0 16px;
+  }
+}

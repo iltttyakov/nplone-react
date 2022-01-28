@@ -1,0 +1,112 @@
+.box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 8px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 8px;
+
+  object-fit: contain;
+}
+
+.info {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.name {
+  margin: 0;
+  margin-right: auto;
+  max-width: 619px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 143%;
+  color: #FFFFFF;
+}
+
+.size {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 143%;
+  text-align: right;
+  color: #999999;
+}
+
+.controlList {
+  display: flex;
+  margin-left: 32px;
+}
+
+.controlText {
+  margin-left: 4px;
+
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 133%;
+  color: #0075FF;
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  height: 32px;
+
+  background: rgba(0, 117, 255, 0.15);
+  border-radius: 6px;
+  border: none;
+
+  cursor: pointer;
+  transition: all .1s ease;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    opacity: .7;
+  }
+
+  &:active {
+    opacity: .5;
+  }
+
+  &.share {
+    padding: 4px;
+
+    .controlIcon {
+      stroke: #0075FF;
+    }
+  }
+
+  &.download {
+    padding: 4px 8px;
+
+    .controlIcon {
+      fill: #0075FF;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .name {
+    margin-right: 0;
+  }
+
+  .size {
+    text-align: left;
+  }
+}

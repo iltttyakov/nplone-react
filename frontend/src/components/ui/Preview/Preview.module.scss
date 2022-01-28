@@ -1,0 +1,106 @@
+.thumbnail {
+  width: 260px;
+  min-height: 146px;
+  margin-right: 24px;
+
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.info {
+
+}
+
+.name {
+  margin: 0;
+  margin-bottom: 8px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #FFFFFF;
+
+  transition: all .1s ease;
+}
+
+.desc {
+  margin: 0;
+  margin-bottom: 13px;
+
+  font-size: 14px;
+  line-height: 160%;
+  color: #FFFFFF;
+}
+
+.transaction {
+
+}
+
+.link {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+.box {
+  position: relative;
+
+  display: flex;
+  align-items: flex-start;
+
+  cursor: pointer;
+
+  &:hover {
+    .name {
+      color: #0075FF;
+    }
+  }
+}
+
+.withTransaction {
+
+}
+
+@media (max-width: 768px) {
+  .box {
+    padding: 24px 16px 11px 16px;
+
+    background: #1F1F1F;
+
+    &:first-child {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    &:last-child {
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+
+    &.withTransaction {
+      padding-bottom: 60px;
+    }
+  }
+
+  .thumbnail {
+    width: 86px;
+    min-height: 86px;
+    margin-right: 16px;
+  }
+
+  .desc {
+    font-size: 12px;
+  }
+
+  .transaction {
+    position: absolute!important;
+    left: 16px;
+    right: 16px;
+    bottom: 24px;
+  }
+}

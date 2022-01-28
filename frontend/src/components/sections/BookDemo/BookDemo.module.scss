@@ -1,0 +1,153 @@
+.section {
+  overflow: hidden;
+
+  position: relative;
+  z-index: 1;
+
+  padding-top: 150px;
+  padding-bottom: 124px;
+
+  background-color: #243549;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container {
+
+}
+
+.title {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 120%;
+  color: #FFFFFF;
+}
+
+.titleArrow {
+  position: absolute;
+  left: 564px;
+  bottom: -107px;
+
+  height: 109px;
+  width: 532px;
+
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.subTitle {
+  margin: 0;
+  margin-bottom: 48px;
+
+  font-size: 24px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+.form {
+  margin-bottom: 40px;
+}
+
+.propertyList {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style: none;
+}
+
+.propertyItem {
+  display: flex;
+  margin-right: 49px;
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-right: 0;
+    margin-bottom: 32px;
+  }
+}
+
+.propertyIcon {
+  margin-right: 6px;
+
+  fill: #FFFFFF;
+}
+
+.propertyText {
+  font-size: 16px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+
+.hidden {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+	padding:0 !important;
+	border:0 !important;
+	height: 1px !important;
+	width: 1px !important;
+	overflow: hidden;
+}
+
+@media (max-width: 1600px) {
+  .section {
+    padding-bottom: 106px;
+  }
+
+  .container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media (max-width: 1264px) {
+  .titleArrow {
+    display: none;
+  }
+}
+
+@media (max-width: 1064px) {
+  .section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .title {
+    margin-bottom: 24px;
+    font-size: 32px;
+  }
+
+  .subTitle {
+    margin-bottom: 70px;
+    font-size: 20px;
+  }
+
+  .form {
+    margin-bottom: 33px;
+  }
+
+  .propertyItem {
+    margin-bottom: 24px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
